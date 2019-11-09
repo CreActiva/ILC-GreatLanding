@@ -52,7 +52,7 @@ a.carousel-control-prev {
 	background-size: cover; 
 }
 .bg-fernando{
-	background:url('../img/fernando.png') no-repeat center;
+	background:url('../img/fernando.png') no-repeat 95% bottom;
 }
 .fernando::after{
 	content: 'Fernando Celis';
@@ -62,6 +62,10 @@ a.carousel-control-prev {
 	right:0;
 	font-style:initial;
 	color:rgba(255,255,255,0.2);
+}
+.bg-conferencia{
+	background: url('../img/conferencia.jpg') center no-repeat ;
+	background-size:cover;
 }
 /*Media querys*/
 @media (min-width: 1200px) { /*Escritorios para arriba*/
