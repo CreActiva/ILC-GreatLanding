@@ -33,7 +33,7 @@ html, body {
     content: 'El Programa';
     font-size: calc(310%);
     position: absolute;
-    left: 0px;
+    left: 0;
     right: 0;
     font-style: initial;
     color: rgba(0,0,0,0.2);
@@ -51,23 +51,38 @@ a.carousel-control-prev {
 	background-image: url('../img/world-map-city-lights-night.gif');
 	background-size: cover; 
 }
-.city-lights-1{
-	background-image: url('../img/world-map-city-lights-night-1.gif');
-	background-size: cover; 
+.bg-fernando{
+	background:url('../img/fernando.png') no-repeat center;
 }
-
+.fernando::after{
+	content: 'Fernando Celis';
+	font-size:calc(310%);
+	position:absolute;
+	left:0;
+	right:0;
+	font-style:initial;
+	color:rgba(255,255,255,0.2);
+}
 /*Media querys*/
 @media (min-width: 1200px) { /*Escritorios para arriba*/
 
 }
 
 @media (max-width: 1199.98px) { /*Desktop pequeño para abajo*/
-
+	.fernando::after {
+		font-size: calc(250%);
+		top: 0;
+		bottom:0;
+	}
 }
 
 
 @media (max-width: 991.98px) {/*Tablet pequeño para abajo*/
-
+	.fernando::after {
+		font-size: calc(220%);
+		top: 0;
+		bottom:0;
+	}
 }
 
 
@@ -76,11 +91,19 @@ a.carousel-control-prev {
 		line-height: 3rem;/*Disminuye interlineado a super texto*/
 	}
 	.programa::after{
-			font-size: calc(250%); /*No tan grande el texto, salta de linea*/
+		font-size: calc(250%); /*No tan grande el texto, salta de linea*/
+	}
+	.fernando::after {
+		font-size: calc(220%);
+		top: 0;
+		bottom:0;
 	}
 }
 
 @media (max-width: 575.98px) { /*Movil para abajo*/  
+	h1{
+		line-height: 2rem;
+	}
 	.programa::after{
 			font-size: calc(200%); /*No tan grande el texto, salta de linea*/
 	}
@@ -89,6 +112,11 @@ a.carousel-control-prev {
 	}
 	a.carousel-control-prev {
 		left: -10px;
+	}
+	.fernando::after{
+		font-size: calc(170%);
+		top: 20px;
+		bottom:0;
 	}
 } 
 /*============*/
