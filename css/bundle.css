@@ -21,7 +21,7 @@ html, body {
 	background-position: center;
 }
 .buceo {
-	background: url('../img/buceo.jpg') center no-repeat;
+	background: url('../img/buceo.webp') center no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-size:cover;
@@ -39,7 +39,7 @@ html, body {
     color: rgba(0,0,0,0.2);
 }
 .carousel-control-prev-icon,.carousel-control-next-icon {
-	filter: invert(100%); 
+	filter: invert(100%);
 }
 .carousel-control-next {
     right: -60px;
@@ -48,11 +48,11 @@ a.carousel-control-prev {
 	left: -60px;
 }
 .city-lights{
-	background-image: url('../img/world-map-city-lights-night.gif');
+	background-image: url('../img/world-map.gif');
 	background-size: cover; 
 }
 .bg-fernando{
-	background:url('../img/fernando.png') no-repeat 95% bottom;
+	background:url('../img/fernando.webp') no-repeat 95% bottom;
 }
 .fernando::after{
 	content: 'Fernando Celis';
@@ -64,7 +64,7 @@ a.carousel-control-prev {
 	color:rgba(255,255,255,0.2);
 }
 .bg-conferencia{
-	background: url('../img/conferencia.jpg') center no-repeat ;
+	background: url('../img/conferencia.webp') center no-repeat ;
 	background-size:cover;
 }
 /*Media querys*/
