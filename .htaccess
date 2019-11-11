@@ -33,3 +33,11 @@
   ExpiresByType application/pdf "access plus 1 month"
   ExpiresByType application/x-shockwave-flash "access plus 1 month"
 </IfModule>
+SetOutputFilter DEFLATE
+Header unset ETag
+FileETag None
+<FilesMatch "\.(js|css|ico|pdf|jpg|jpeg|png|gif)$">
+Header set Cache-Control "public"
+Header set Cache-Control: max-age=31535999
+Header unset Last-Modified
+</FilesMatch>
